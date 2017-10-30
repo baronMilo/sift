@@ -1,0 +1,37 @@
+Goal: 
+  - build a data visualizaiton ui designed for the iPad.
+  - keep it minimalistic and refine refine refine
+  - use uncommon attention to detail
+  - simplicity with emergent properties 
+  - "Simple rules lead to complex behavior. Complex rules lead to stupid behavior"
+  - Layer the complexity
+
+walkthrough:
+  - user loads data (csv)
+  - evaluation of data
+    - what are the dimensions and metrics?
+    - what is the rollup?
+  - process the data
+  - present the data
+    - inital presentation is force directed bubbles (representing raw data)
+    - user can compose visualizations on top of the data
+    - user scrolls left/right to pivot dimensions
+    - user scrolls down/up to drill in/out of data
+  - that's it!
+
+progression:
+  - A
+    - load hard-coded csv
+    - determine structure and build data engine google "javascript database library"
+    - present bubbles
+  - B: composability
+    - build more components
+        - layout components
+    - drag & drop: https://bl.ocks.org/mbostock/9669633
+  - C
+    -introduce data restructuring
+      - user can change the rollup
+      - dynamically happens with pivots?
+  - D
+    - add scrolling https://bl.ocks.org/mbostock/8411383
+    - introduce file loading
